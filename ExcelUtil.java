@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelUtil {
 	XSSFWorkbook excel;
-	//This is a constructor which will call whenever object of the class is created
+	
 	public ExcelUtil(String excelpath) 
 	{
 	try
@@ -19,7 +19,7 @@ public class ExcelUtil {
 		e.printStackTrace();
 	}
 	}
-	//this method is used to get active row from the excel
+	
 	public int getRowCount(int SheetNum)
 	{
 		return excel.getSheetAt(SheetNum).getLastRowNum()+1;
@@ -30,7 +30,7 @@ public class ExcelUtil {
 		return excel.getSheet(SheetName).getLastRowNum()+1;
 	}
 	
-	//this method used to get the cell data
+	
 	public String getCelldata(int SheetNum,int row,int cell)
 	{
 		return excel.getSheetAt(SheetNum).getRow(row).getCell(cell).toString();
