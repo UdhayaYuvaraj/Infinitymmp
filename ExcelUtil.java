@@ -1,13 +1,9 @@
 package util;
-
 import java.io.File;
 import java.io.FileInputStream;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
-
 public class ExcelUtil {
 	XSSFWorkbook excel;
-	
 	//This is a constructor which will call whenever object of the class is created
 	public ExcelUtil(String excelpath) 
 	{
