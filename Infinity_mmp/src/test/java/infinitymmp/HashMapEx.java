@@ -10,7 +10,7 @@ public class HashMapEx {
 
 		HashMap<String,String> hMap=new HashMap<String,String>();
 		hMap.put("name","Nana");
-		hMap.put("address","New York");
+		hMap.put("address","New York City");
 		System.out.println(hMap.get("address"));
 		
 		Set<String>keys=hMap.keySet();
