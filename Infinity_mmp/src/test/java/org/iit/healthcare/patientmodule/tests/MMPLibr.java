@@ -15,7 +15,9 @@ public class MMPLibr {
 	public String login(String username,String password)
 	{
 
-		driver.findElement(By.xpath("//input[@name='username']")).sendKeys(username);
+
+		driver.findElement(By.name("username")).sendKeys(username);
+
 		driver.findElement(By.id("password")).sendKeys(password);
 		driver.findElement(By.name("submit")).click();
 		String actual=driver.findElement(By.xpath("//h3[normalize-space()='ria1']")).getText();
